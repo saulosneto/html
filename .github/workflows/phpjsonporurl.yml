@@ -1,0 +1,17 @@
+<html>
+    
+    <head>
+        
+    </head>
+    <body>   
+    <script>function getUrlParam(param, url) {
+  param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+  var regex = new RegExp("[?&]" + param + "=([^&#]*)");
+  url   = url || decodeURIComponent(window.location.href);
+  var match = regex.exec(url);
+  return match ? match[1] : "";
+}
+
+alert(getUrlParam("numeroTicket", "COLOQUE AQUI A URL DA API));</script>
+    </body>
+</html>
